@@ -2,6 +2,10 @@ import React, {Component} from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 
+function Head() {
+  return <h1>tic-tac-toe</h1>;
+}
+
 function Square(props) {
   return (
     <button className="square" onClick={props.onClick}>
@@ -43,6 +47,7 @@ class Board extends Component {
   }
 }
 
+
 class Game extends Component {
   constructor(props) {
     super(props);
@@ -56,6 +61,8 @@ class Game extends Component {
       xIsNext: true
     };
   }
+
+
 
   handleClick(i) {
     const history = this.state.history.slice(0, this.state.stepNumber + 1);
@@ -116,7 +123,7 @@ class Game extends Component {
         </div>
         <div className="game-info">
           <div>{status}</div>
-          <ol>{moves}</ol>
+          <ul>{moves}</ul>
         </div>
       </div>
     );

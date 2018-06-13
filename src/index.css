@@ -1,0 +1,25 @@
+
+
+.game {
+    text-align: center;
+}
+
+.square {
+    min-width: 21px;
+    min-height: 21px;
+}
+
+.game-board {
+    padding: 25px;
+    background-color: black;
+}
+
+.game-info {
+
+    background-color: grey;
+}
+
+ul {
+    list-style-type: none;
+    padding-bottom: 21px;
+  }
